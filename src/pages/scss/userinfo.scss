@@ -1,0 +1,10 @@
+@use "../../App.scss" as g;
+
+.user-info-wrap {
+    @include g.myFlex($jc: flex-start, $ai: flex-start);
+    padding-top: 50px;
+
+    .user-info-left {
+        border-right: 1px solid #ccc;
+    }
+}

@@ -1,0 +1,32 @@
+@use "../../App.scss" as g;
+
+.product-wrap {
+    @include g.myFlex($ai: start);
+
+    .product-img {
+        width: 40%;
+
+        img {}
+    }
+
+    .product-text {
+        button {
+            padding: 10px;
+        }
+
+        .product-size {
+            ul {
+                @include g.myFlex($gap: 10px, $jc: flex-start);
+
+                li {
+                    button {
+                        &.active {
+                            background: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@use "../../App.scss" as g;
+
+header {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    color: #eee;
+    z-index: 1000;
+
+    &.active {
+        background: #fff;
+        color: #111;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .inner {
+        @include g.myFlex();
+
+        .header-left {
+            @include g.myFlex($gap: 50px);
+
+            .logo {
+                width: 120px;
+            }
+
+            .main-menu {
+                @include g.myFlex($gap: 70px);
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .header-right {
+            @include g.myFlex();
+
+            .gnb-list {
+                @include g.myFlex();
+                line-height: 1;
+
+                li {
+                    position: relative;
+
+                    img {
+                        width: 24px;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+
+                        &.cart-num {
+                            position: absolute;
+                            background: #a70303;
+                            width: 20px;
+                            height: 20px;
+                            color: #fff;
+                            border-radius: 50%;
+                            top: -5px;
+                            right: -10px;
+                            text-align: center;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+
+            .search-wrap {
+                position: relative;
+
+                input {
+                    line-height: 2;
+                }
+
+                .search-icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

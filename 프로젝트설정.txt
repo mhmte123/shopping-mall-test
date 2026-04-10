@@ -1,0 +1,6 @@
+[설치]
+1. 서브페이지 - react-router-dom
+2. 배너 목록 슬라이드 (플러그인) - swiper
+3. 전역변수 - zustand
+4. 회원가입, 로그인 - firebase
+5. 카카오 로그인 - 

@@ -1,0 +1,35 @@
+// 변수
+// 믹스인
+@mixin myFlex($jc: space-between, $ai: center, $fw: null, $gap: 20px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    gap: $gap;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.women-list {
+    @include myFlex();
+    width: 100%;
+
+    .women-left {
+        width: 45%;
+    }
+
+    .women-right {
+        width: 50%;
+    }
+}
+
+.sub-page-wrap {
+    padding: 80px 0;
+}
