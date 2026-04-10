@@ -1,4 +1,4 @@
-import "./scss/paymentModal.scss";
+import "./scss/paymentmodal.scss";
 
 export default function PaymentModal({ onClose, onConfirm }) {
     return (

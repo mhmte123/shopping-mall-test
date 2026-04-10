@@ -4,7 +4,7 @@ import "./scss/userinfo.scss";
 import OrderList from '../components/OrderList';
 import WishList from '../components/WishList';
 import CouponList from '../components/CouponList';
-import UserEdit from '../components/userEdit';
+import UserEdit from '../components/UserEdit';
 import { useLocation } from 'react-router-dom';
 
 export default function UserInfo() {
